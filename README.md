@@ -1,9 +1,9 @@
-***Powerful Student Management System - Django Application
-**This project is a dynamic Django-based application designed to display detailed student profiles. The application leverages Django's powerful backend, responsive design using Bootstrap, and clean templates to create an easy-to-use, visually appealing interface.
+##*Powerful Student Management System - Django Application
+##This project is a dynamic Django-based application designed to display detailed student profiles. The application leverages Django's powerful backend, responsive design using Bootstrap, and clean templates to create an easy-to-use, visually appealing interface.
 
-***Key Features
+##*Key Features
 
-**1. Student Profile Overview
+##1. Student Profile Overview
 
 Displays personal information such as:
 
@@ -19,7 +19,7 @@ Contact Information (Mobile and Email).
 
 Profile Picture.
 
-**2. "About Me" Section
+##2. "About Me" Section
 
 A personal introduction about the student.
 
@@ -31,27 +31,27 @@ Number of Following.
 
 Number of Friends.
 
-**3. Address Details.
+##3. Address Details.
 
 Permanent Address and Current Address fields for maintaining up-to-date location information.
 
-**4. Skills.
+##4. Skills.
 
 A graphical representation of the student’s skills using progress bars.
 Dynamically updates based on backend data.
 
-**5. Educational Background.
+##5. Educational Background.
 
 Highlights the student's academic journey, including, Schooling, Undergraduate and Postgraduate details.
 
-**6. Certificates.
+##6. Certificates.
 
 Showcases student achievements:
 Awards.
 Recognitions
 Certifications.
 
-**7. Settings.
+##7. Settings.
 A form to allow users to update:
 
 Username.
@@ -60,11 +60,11 @@ Current Password.
 
 New Password.
 
-***Project Structure
+##*Project Structure
 
 The project follows a modular structure for clarity and maintainability.
 
-**1. Django Templates.
+##1. Django Templates.
 base.html:
 
 Shared layout for the application.
@@ -72,58 +72,58 @@ Contains common elements like the navigation bar, footer, and shared JavaScript/
 student_details.html:
 Dedicated template for displaying the student profile with sections like "About Me", "Education", "Certificates", and "Settings".
 
-**2. Static Assets
+##2. Static Assets
 CSS:
 
 Located in static/assets/css/.
 Manages page layout and responsiveness.
 
-**JavaScript:
+##JavaScript:
 
 Located in static/assets/js/.
 Adds interactivity, including smooth animations for the skill progress bars.
 
-**3. Media
+##3. Media
 Student Images:
 Dynamically served using Django’s media handling.
 
-**4. Backend
+##4. Backend
 Models:
 Handles student data (e.g., personal details, skills, education, and certificates).
 
 Views:
 Dynamically render data in templates.
 
-**Admin Panel:
+##Admin Panel:
 Manage and update student records.
 Installation and Setup
 Follow these steps to set up the project:
 
-**1. Clone the Repository
+##1. Clone the Repository
 
 git clone <repository_url>
 cd <project_directory>
 
-**2. Set Up a Virtual Environment
+##2. Set Up a Virtual Environment
 
 python -m venv env
 source env/bin/activate  # For Linux/Mac
 env\Scripts\activate     # For Windows
 
-**3. Install Required Packages
+##3. Install Required Packages
 Install all dependencies specified in requirements.txt:
 pip install -r requirements.txt
 
-**4. Apply Migrations.
+##4. Apply Migrations.
 
 python manage.py makemigrations
 python manage.py migrate
 
-**5. Run the Development Server
+##5. Run the Development Server
 
 python manage.py runserver
 
-**6. Access the Application
+##6. Access the Application
 Open your browser and navigate to:
 
 http://127.0.0.1:8000/student
@@ -134,14 +134,14 @@ Viewing Student Profiles:
 Access the URL /student/ to view a student's details.
 Editing Student Information:
 
-**Log in to the Django admin panel (http://127.0.0.1:8000/admin).
+##Log in to the Django admin panel (http://127.0.0.1:8000/admin).
 Update student data such as name, section, email, and skills.
 Adding New Students:
 
 Use the admin panel to add new student records, including profile pictures.
 Updating Passwords:
 
-***Use the settings form in the "Student Details" page to change passwords.
+##*Use the settings form in the "Student Details" page to change passwords.
 Technologies Used
 Frontend
 HTML5
@@ -154,7 +154,7 @@ Database
 SQLite (default, easily configurable to other databases like MySQL or PostgreSQL)
 Customization
 
-**The project can be customized to suit your needs. Here are some suggestions:
+##The project can be customized to suit your needs. Here are some suggestions:
 
 Add More Fields:
 
@@ -174,7 +174,7 @@ Steps to Contribute:
 Fork the repository.
 
 
-***Clone the forked repository:
+##*Clone the forked repository:
 
 git clone <your_forked_repo_url>
 
