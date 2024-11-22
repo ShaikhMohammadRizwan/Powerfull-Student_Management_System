@@ -152,11 +152,11 @@ def view_student(request, slug):
     }
     return render(request, 'students/student-details.html', context)
 
-def delete_student(request, slug):
-    if request.method == 'POST':
+def delete_student(request,slug):
+    if request.method == "POST":
         student = get_object_or_404(Student, slug=slug)
         student_name = f"{student.first_name} {student.last_name}"
         student.delete()
-        messages.success(request, "Student deleted successfully!")
-        return redirect('student_list')  # Redirect to student list page
+        # create_notification(request.user, f"Deleted student: {student_name}")
+        return redirect ('student_list')
     return HttpResponseForbidden()

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'students',
     'student',
+    'home_auth',
 ]
 
 MIDDLEWARE = [
@@ -129,5 +130,28 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
+# settings.py
+
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = 'your-email@gmail.com'  # Replace with your email
+# EMAIL_HOST_PASSWORD = 'your-email-password'  # Replace with your email password or app-specific password
+
+# settings.py
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'brihjp6@gmail.com'  # Replace with your email
+EMAIL_HOST_PASSWORD = 'LaZzy@@Rizwan'  # Replace with your email password or app-specific password
+
+AUTH_USER_MODEL = 'home_auth.CustomUser'  # Adjust 'home_auth' to the app where CustomUser is defined
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',  # Default backend
+)
