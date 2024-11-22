@@ -5,19 +5,18 @@ class Parent(models.Model):
     father_name = models.CharField(max_length=100)
     father_occupation = models.CharField(max_length=100)
     father_contact = models.CharField(max_length=15)
-    father_email = models.EmailField(max_length=254)  # Updated max_length
-
+    father_email = models.EmailField()
+    
     mother_name = models.CharField(max_length=100)
-    mother_occupation = models.CharField(max_length=100)
+    mother_occupation = models.CharField(max_length=100, null=True, blank=True)
     mother_contact = models.CharField(max_length=15)
-    mother_email = models.EmailField(max_length=254)  # Updated max_length
+    mother_email = models.EmailField()
 
-    parent_address = models.TextField()
+    present_address = models.TextField()  
     permanent_address = models.TextField()
 
-    def __str__(self) -> str:
-        return f'{self.father_name} {self.mother_name}'
-    
+    def __str__(self):
+        return f"{self.father_name} & {self.mother_name}"
 
 class Student(models.Model):
     first_name = models.CharField(max_length=100)
