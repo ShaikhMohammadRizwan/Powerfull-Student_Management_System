@@ -1,7 +1,7 @@
-##*Powerful Student Management System - Django Application
+##Powerful Student Management System - Django Application
 ##This project is a dynamic Django-based application designed to display detailed student profiles. The application leverages Django's powerful backend, responsive design using Bootstrap, and clean templates to create an easy-to-use, visually appealing interface.
 
-##*Key Features
+##Key Features
 
 ##1. Student Profile Overview
 
@@ -60,7 +60,7 @@ Current Password.
 
 New Password.
 
-##*Project Structure
+##Project Structure
 
 The project follows a modular structure for clarity and maintainability.
 
@@ -141,7 +141,7 @@ Adding New Students:
 Use the admin panel to add new student records, including profile pictures.
 Updating Passwords:
 
-##*Use the settings form in the "Student Details" page to change passwords.
+##Use the settings form in the "Student Details" page to change passwords.
 Technologies Used
 Frontend
 HTML5
@@ -174,7 +174,7 @@ Steps to Contribute:
 Fork the repository.
 
 
-##*Clone the forked repository:
+##Clone the forked repository:
 
 git clone <your_forked_repo_url>
 
